@@ -174,21 +174,41 @@ textarea.input100{min-height:139px;
 	transition:all .4s}
 .contact100-form-btn:hover{background:#333}
 @media(max-width:992px){
-.contact100-form{width:60%;padding:56px 30px 63px}
-.contact100-more{width:40%}
+.contact100-form{width:100%;padding:56px 30px 63px;border: 1px solid black;}
+.contact100-more{   
+    float: left;
+    height: -10px;
+    padding: 0;}
+.wrap-contact100 {flex-wrap:inherit;justify-content: center;flex-direction: row;width: 100%;padding: 0%;display: block;}
+.container-contact100 {min-height: 0%;}
+.flex-col-c-m {    visibility: hidden;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+}
 }
 @media(max-width:768px)
-{.contact100-form{width:100%}
-.contact100-more{width:100%}
-}
+{
+.contact100-more{visibility: hidden;}
+.wrap-contact100 {flex-wrap:wrap-reverse;justify-content: center;flex-direction: row;width: 100%;height: 100%;padding: 0%;}
+.container-contact100 {min-height: 0%;}
+.flex-col-c-m {    visibility: hidden;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+}}
 @media(max-width:576px)
 {.contact100-form{padding:56px 15px 63px}
+.wrap-contact100 {flex-wrap:wrap-reverse;justify-content: center;flex-direction:row;width: 100%;height: 100%;padding: 0%;}
+.container-contact100 {min-height: 0%;}
 .rs1-wrap-input100,.rs2-wrap-input100{width:100%}
 .rs2-wrap-input100{border-left:1px solid #e6e6e6;
-	border-top:none
+	border-top:none}
+.flex-col-c-m {    visibility: hidden;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;}
 	}
-	}
-
 		
 .p-b-20{padding-bottom:20px}
 .p-b-47{padding-bottom:47px}
